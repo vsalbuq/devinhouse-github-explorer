@@ -1,0 +1,141 @@
+*{
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: #F0F0F5 url(../assets/github-background.svg) no-repeat 70% top;
+  -webkit-font-smoothing: antialiased;
+}
+
+body, input, button{
+  font: 16px Roboto, sans-serif;
+}
+
+#raiz {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1.titulo{
+  font-size: 48px;
+  color: #3a3a3a;
+  max-width: 450px;
+  line-height: 56px;
+
+  margin-top: 80px;
+}
+
+form {
+  margin-top: 40px;
+  max-width: 700px;
+
+  display: flex;
+
+}
+
+input {
+  flex: 1;
+  height: 70px;
+  padding: 0 24px;
+  border: 0;
+  border-radius: 5px 0 0 5px;
+  color: #3a3a3a;
+  border: 2px solid #fff;
+  border-right: 0;
+}
+
+input.erro{
+  border-color: #c53030;
+}
+
+input::placeholder{
+  color: #a8a8b3;
+}
+
+span.erro{
+  display: block;
+  color: #c53030;
+  margin-top: 8px;
+}
+
+button {
+  width: 210px;
+  height: 70px;
+  background: #04d361;
+  border-radius: 0 5px 5px 0;
+  border: 0;
+  color: #fff;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+button:hover{
+  background: #03a84d;
+}
+
+div#repositorios {
+  margin-top: 80px;
+  max-width: 700px;
+}
+div#repositorios div {
+  background: #fff;
+  border-radius: 5px;
+  width: 100%;
+  padding: 24px;
+  display: block;
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+
+  transition: transform 0.2s;
+}
+
+div#repositorios div img.svg {
+  margin-left: auto;
+  /* color: #cbcbd6; */
+
+  background-color: #cbcbd6;
+  -webkit-mask: url(./assets/chevron-right.svg) no-repeat center;
+  mask: url(./assets/chevron-right.svg) no-repeat center;
+}
+
+div#repositorios div:hover {
+    transform: translateX(10px);
+  }
+
+div#repositorios div + div {
+  margin-top: 16px;
+}
+
+div#repositorios div img.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+
+div#repositorios div div {
+  margin: 0 16px;
+  flex: 1;
+  flex-direction: column;
+  align-items: start;
+}
+
+div#repositorios div div strong {
+  font-size: 20px;
+  color: #3d3d4d;
+}
+
+div#repositorios div div p {
+  font-size: 18px;
+  color: #a8a8b3;
+  margin-top: 4px;
+}
